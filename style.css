@@ -1,0 +1,477 @@
+/* Design System */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {box-sizing: border-box;}
+body {margin: auto; padding: 56px; background-color: #0E0F11; max-width: 1920px;}
+h1 {font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 11.25rem; color: #FCFCFC; margin: 0;}
+h2 {font-family: 'Montserrat', sans-serif; color: #FCFCFC; font-weight: 700; font-size: 2.25rem; margin: 0;}
+h3 {font-family: 'Montserrat', sans-serif; color: #FCFCFC; font-size: 1.438rem; font-weight: 400; margin: 0;}
+p {font-family: 'Poppins', sans-serif; letter-spacing: 1%; font-size: 1rem; color: #A2A4A4; margin: 0;}
+span {font-family: 'Poppins', sans-serif; font-size: 1rem; color: #A1A3A3; margin: 0;}
+a {text-decoration: none; font-family: 'Poppins', sans-serif; font-size: 2.2rem; color: #808080; margin: 0;}
+
+/* ---------------------------- Navbar ---------------------------- */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    flex-flow: row wrap;
+    gap: 3rem;
+}
+
+.social-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social-wrapper i {
+    transition: all 0.5s ease-out;
+}
+
+.social-wrapper i:hover {
+    color: #fff;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.contact-wrapper span {
+    padding: 12px 16px;
+    border-radius: 6px;
+    transition: all .4s ease-out;
+    border: 2px solid #131417;
+}
+
+.contact-wrapper span:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: #131417;
+    border: 2px solid #131417;
+}
+
+.contact-wrapper span:active {
+    background-color: #191B1F;
+    border: 2px solid #191B1F;
+}
+
+
+.email-container i {
+    margin-right: 1rem;
+}
+
+.phone-container i {
+    margin-right: 1rem;
+}
+
+
+/* ---------------------------- Hero ---------------------------- */
+.hero {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.hero h2 {
+    padding-bottom: 0.5rem;
+}
+
+.hero p {
+    width: 406px;
+    margin: auto;
+}
+
+
+.hero h3 {
+    padding-bottom: 1rem;
+    font-weight: 100;
+}
+
+
+/* ---------------------------- Experience ---------------------------- */
+.experience h1 {
+    margin-bottom: 3rem;
+}
+.exp {
+    font-size: 6rem;
+    color: #FCFCFC;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #47FF85;
+}
+
+
+/* ---------------------------- Education ---------------------------- */
+.education h1{
+    margin-bottom: 3rem;
+}
+
+.education-card-container .child-dot {
+    background-color: #FFDB5C;
+}
+
+.education-card-container .left-line {
+    background-color: #FFDB5C;
+}
+.edu {
+    font-size: 6rem;
+    color: #FCFCFC;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #FFDB5C;
+}
+
+
+/* ---------------------------- Skills ---------------------------- */
+.skills-interest h1{
+    margin-bottom: 3rem;
+}
+
+.skills-card-design-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: solid 2px #131417;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .4s ease-out;
+}
+
+.skills-card:hover {
+    background-color: #131417;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.18);
+    border-radius: 12px;
+    cursor: pointer;
+    gap: 2rem;
+}
+
+.point {
+    width: 6px;
+    height: 6px;
+    background-color: #F04848;
+    border-radius: 50%;
+}
+
+.skills-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+}
+.skil {
+    font-size: 6rem;
+    color: #FCFCFC;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #F04848;
+}
+
+/* ---------------------------- Card Design ---------------------------- */
+.all-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(401px, 1fr));
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+
+.card {
+    border: 2px solid #1D2024;
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: all .4s ease-out;
+  }
+
+  .card:hover {
+    border: 2px solid #131417;
+    background-color: #131417;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  
+  .company-name {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+  }
+  
+  .parent-dot {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      background-color: #363845;
+      border-radius: 50%;
+  }
+  
+  .child-dot {
+      height: 8px;
+      width: 8px;
+      background-color: #47FF84;
+      border-radius: 50%;
+  }
+  
+  .company-name h2 {
+      color: #fff;
+      font-size: 1.875rem;
+      font-family: 'Roboto', sans-serif;
+  }
+
+
+  .job-detail h3 {
+      color: #CFCFCF;
+      font-size: 1.125rem;
+      font-family: 'Poppins', sans-serif;
+      padding-bottom: 0.5rem;
+  }
+  
+  .job-detail p {
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      width: 299px;
+      color: #A2A4A4;
+  }
+  
+  .left-line {
+      height: 88px;
+      width: 4px;
+      background-color: #47FF85;
+      border-radius: 2px;
+      margin-left: 0.375rem;
+      flex-shrink: 0;
+  }
+  
+  .job-detail {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+  }
+
+
+
+/* ---------------------------- 1124 Media Query ---------------------------- */
+@media screen and (max-width:1124px) {
+    body {
+        padding: 3rem;
+    }
+
+    header nav {
+        margin-bottom: 4rem;
+        justify-content: center;
+        transition: all .4s ease-out;
+    }
+
+    .social-wrapper {
+        justify-content: center;
+        transition: all .4s ease-out;
+    }
+
+    .social-wrapper a {
+        font-size: 2rem;
+        transition: all .4s ease-out;
+    }
+
+    .contact-wrapper {
+       justify-content: center;
+       gap: 2.5rem;
+    }
+
+    .contact-wrapper span {
+        font-size: 1rem;
+        transition: all .4s ease-out;
+    }
+
+    .hero {
+        margin-bottom: 4rem;
+    }
+
+    .hero h2 {
+        transition: all .4s ease-out;
+        font-size: 2.25rem;
+    }
+
+    .hero h3 {
+        transition: all .4s ease-out;
+        font-size: 1.438rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        width: 406px;
+        transition: all .4s ease-out;
+    }
+
+    .experience h1 {
+        font-size: 6.25rem;
+        transition: all .4s ease-out;
+        margin-bottom: 2.5rem;
+    }
+
+    .education h1 {
+        font-size: 6.25rem;
+        transition: all .4s ease-out;
+        margin-bottom: 2.5rem;
+    }
+
+    .skills-interest h1 {
+        font-size: 6.25rem;
+        transition: all .4s ease-out;
+        margin-bottom: 2.5rem;
+    }
+
+    .skills-card {
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 1.5rem;
+        transition: all .4s ease-out;
+    }
+
+    .all-card-container {
+        grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .card {
+        padding: 0.875rem;
+        transition: all .4s ease-out;
+    }
+
+    .company-name {
+        margin-bottom: 0.875rem;
+    }
+
+    .company-name h2 {
+        font-size: 1.25rem;
+    }
+
+    .job-detail h3 {
+        font-size: 0.875rem;
+    }
+
+    .job-detail p {
+        font-size: 0.875rem;
+        max-width: 249px;
+    }
+}
+
+
+/* ---------------------------- 640 Media Query ---------------------------- */
+@media screen and (max-width:640px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    header nav {
+        margin-bottom: 3rem;
+        justify-content: center;
+        transition: all .4s ease-out;
+    }
+
+    .social-wrapper {
+        justify-content: center;
+        transition: all .4s ease-out;
+    }
+
+    .social-wrapper a {
+        font-size: 1.5rem;
+        transition: all .4s ease-out;
+    }
+
+    .contact-wrapper {
+       justify-content: center;
+       gap: 2.5rem;
+    }
+
+    .contact-wrapper span {
+        font-size: 0.875rem;
+        transition: all .4s ease-out;
+    }
+
+    .hero {
+        margin-bottom: 3rem;
+    }
+
+    .hero h2 {
+        transition: all .4s ease-out;
+        font-size: 1.875rem;
+    }
+
+    .hero h3 {
+        transition: all .4s ease-out;
+        font-size: 1.375rem;
+    }
+
+    .hero p {
+        font-size: 0.875rem;
+        width: 312px;
+        transition: all .4s ease-out;
+    }
+
+    .experience h1 {
+        font-size: 3rem;
+        transition: all .4s ease-out;
+        margin-bottom: 2rem;
+    }
+
+    .education h1 {
+        font-size: 3rem;
+        transition: all .4s ease-out;
+        margin-bottom: 2rem;
+    }
+
+    .skills-interest h1 {
+        font-size: 3rem;
+        transition: all .4s ease-out;
+        margin-bottom: 2rem;
+    }
+
+    .skills-card {
+        justify-content: flex-start;
+        gap: 0.875rem;
+        padding: 1rem;
+        transition: all .4s ease-out;
+    }
+
+    .all-card-container {
+        grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card {
+        padding: 0.875rem;
+        transition: all .4s ease-out;
+    }
+
+    .company-name {
+        margin-bottom: 0.875rem;
+    }
+
+    .company-name h2 {
+        font-size: 1.25rem;
+    }
+
+    .job-detail h3 {
+        font-size: 0.875rem;
+    }
+
+    .job-detail p {
+        font-size: 0.875rem;
+        max-width: 249px;
+    }
+}
